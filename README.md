@@ -14,6 +14,8 @@ aim the laser at the black object.
 Before mounting the servo motors to the pan tilt, we print 90 degrees to our motors with arduino.
 Then we mount the motors on the pan tilt. After that, I glued the laser onto the pan tilt with
 silicone(Figure 1).
+![image](https://user-images.githubusercontent.com/53488195/167212167-45ded231-b078-4243-89c3-8e4188b0ce25.png)
+
 Figure 1
 We created an Arduino file that contains writes angles comes from C# to servos motors and opens
 laser.After all the connections are made, we stick the Robot to the keyboard in line with the camera(Figure 2 ).
@@ -22,6 +24,8 @@ formula.We make sure that the laptop screen is 90 degrees. Then we position the 
 measure the distance between the screen and the wall. Then we run the C # application and measure the width
 of the area covered by the camera. These values are very important for the calibration of the system. I
 measured my values as distance 100 cm and width 145 cm.
+![image](https://user-images.githubusercontent.com/53488195/167212184-0fc86439-283d-4ddf-a7df-465f59187780.png)
+
 Figure 2
 I calculated width / BWImage.Width(myscale) in C# code. This calculation calculates cm per pixel. We
 convert the image on the camera to black and convert the black colors to white using C#. The purpose of this
